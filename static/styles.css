@@ -1,0 +1,73 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Menu container */
+.menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Heading for the menu */
+.menu h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #1abc9c;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+/* Button styles */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effects */
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Button focus styling (when clicked) */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px #3498db;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .menu {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .menu h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
